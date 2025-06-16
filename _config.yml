@@ -2,7 +2,7 @@ name: My Jekyll Website
 remote_theme: pages-themes/hacker@v0.2.0
 lsi: false
 safe: true
-source: neha362.github.io
+source: ./
 incremental: false
 highlighter: rouge
 gist:

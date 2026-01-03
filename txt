@@ -1,0 +1,375 @@
+Sidebar menu
+Search
+Write
+Notifications
+
+Neha Sudarshan
+Home
+Library
+Profile
+Stories
+Stats
+Following
+Find writers and publications to follow.
+
+See suggestions
+JavaScript in Plain English
+JavaScript in Plain English
+New JavaScript and Web Development content every day. Follow to join our 3.5M+ monthly readers.
+
+Follow publication
+
+This member-only story is on us. Upgrade to access all of Medium.
+
+Member-only story
+
+How to Create a Kick-ass Portfolio Site that will WOW Your Next Employer
+Tim Wong
+Tim Wong
+
+Follow
+7 min read
+·
+Jun 20, 2021
+402
+
+1
+
+Press enter or click to view image in full size
+
+Portfolio sites, the cornerstone to any great job application. They serve as a way to cultivate your personal branding and sell you and your skills out to the employer and the job market.
+
+Today I’ll walk you through how to create a kick-ass portfolio site that will impress and wow your next employer. So without further ado, let’s begin!
+
+Step 1— Custom Domains
+First and foremost, head over to Namecheap or GoDaddy and spend an ample amount of time shopping for your desired domain name, this is an important step as this domain name will serve as your personal brand’s name.
+
+Your domain name should ideally be:
+
+Containing your actual name
+Memorable (easy to remember)
+Meaningful
+Easy To Read
+If you have a fairly common name, your desired domain name will probably be taken by a doppelgänger somewhere across the globe. Fear not, try to use a different TLD such as .net | .gg |.dev | .cc | or even | .ai
+
+Here are some good examples of selecting a name:
+
+John Smith— https://thejohnsmith.dev
+
+Harry Potter — https://harrypotter.gg
+
+Naruto Uzumaki — https://narutouz.com
+
+Step 2 — Hosting Your Portfolio Site
+Now that you have an address for the worldwide web, it’s time to select a hosting provider to build a house in that particular address.
+
+Wix, WordPress, Squarespace are all awesome website builders & I personally love WordPress but when you’re building a portfolio site: you’re supposed to be showing off your skills in building an app/site. (does not apply — if you’re looking for WordPress/Wix/Squarespace jobs)
+
+Instead, use GitHub Pages. It’s entirely free and you get to show off your source code on your GitHub Profile. To start:
+
+2.1 Create a new account
+
+2.2 Create a new repository (repo) — like this 👇
+
+Press enter or click to view image in full size
+
+We will need to link this repo to the custom domain later once we have it all ready and set up. More on that later.
+
+Step 3 — Bootstrap Templates
+There are numerous CSS frameworks out there but Bootstrap remains the most popular CSS framework for a good reason. There are approximately 18 million sites on the web built using Bootstrap, so it’s a given that there will be more templates out there for Bootstrap versus other frameworks.
+
+With that being said, finding a good Bootstrap template is crucial to building a beautiful and functional portfolio site. Here are some good sites to find from:
+
+https://startbootstrap.com/themes
+https://www.creative-tim.com/bootstrap-themes/free
+https://themewagon.com/theme_tag/free/
+https://themefisher.com/free-bootstrap-templates/
+Most of these are free and the quality is definitely un-compromised. You may also choose premium ones as long as they’re within your budget.
+
+You might also be wondering why we’re using a Bootstrap template and not writing it from scratch. Well, in fact, you can. But I believe there’s no need to reinvent the wheel because after all we’re not just downloading the template and changing it to our names.
+
+Instead, we’ll be using it as a foundation to build upon, therefore eliminating the need to recreate everything from scratch. 👍🏻
+
+Step 4 — Content Planning
+Now that we have the barebones of the site from the portfolio templates, we need to plan how the content should be. Essentially your portfolio site should contain these information. In no particular order, but I found this arrangement to be most effective and provide the best user experience and reading flow.
+
+4.1 Intro
+
+This intro should be a short one-liner about yourself and describe a bit of your character/interests/personality. Here’s mine for reference: It has my name and job position, my favourite Apple devices on the left, and my hobbies on the right.
+
+Press enter or click to view image in full size
+
+You also shouldn’t give away too much on the first page because you want to capture the users' attention and encourage them to scroll down to learn more.
+
+4.2 About Me
+
+Here we can include a short write-up about ourselves, our past & our future goals. It may also be good to include your tech stack so that anyone reading can have a rough overview of what skills you have (and don’t have).
+
+4.3 Projects
+
+Pretty self explanatory but this is the most important part which will be viewed most often. This section will feature all the projects you’ve done. You may even include projects at work that you’re genuinely proud of and of course your personal side projects.
+
+Press enter or click to view image in full size
+
+4.4 Blog (optional)
+
+Having a blog is optional but highly recommended because it creates a personal branding. Using this, you can create a lasting effect in anyone’s minds with your personal interests, struggles and how you overcame them, and your goals in the future. Here I have some simple JavaScript code to pull a collection of posts from Medium.
+
+4.5 Contact details
+
+A great (portfolio) site wouldn’t be complete without an effective Call-To-Action (CTA) that creates ease for your potential employer to give you an email/call. A custom form that allows your users to send you an email, has proven to be highly effective. On top of that, you should also include LinkedIn/GitHub links for them to further interact with you.
+
+Press enter or click to view image in full size
+
+Step 5— Cleaning Up
+5.1 .html extensions
+
+If you’re using a Bootstrap template, chances are all href will be to another HTML page with a .html extension. This will make your links ugly like this.
+
+Of course we don’t want that so we can remove the .html extension from all the href in every .html file & replace to using / instead. Here is an example 👇
+
+Don’t worry about not being able to access the pages on localhost because GitHub Pages will handle all the routing for you, another reason why GitHub Pages is awesome.
+
+5.2 Title & Description Tags
+On top of every .html file make sure to include these two lines of code
+
+<title>Tim Wong Portfolio Site | Software Engineer, Ex Flight Crew, Atomic Habits (JavaScript, Ruby, React, Python)</title>
+<meta name="description" content="Tim Wong is a Software Engineer with a wide array of skills from programming, writing, design. Love to meet new people & learn all about startups and businesses.">
+So that when you share the link of your portfolio site, it will include details as such, looks much better doesn’t it? 😉
+
+Press enter or click to view image in full size
+
+Step 6— Deploying
+Now we’re ready for the world to see your masterpiece. Go ahead and initialize your folder as a Git repository. Go back to the repo link and copy the command-line codes given by GitHub (refer to Step 2.2). The commands should look something like this:
+
+git init
+git add .
+git commit -m "First commit"
+git branch -M master
+git remote add origin https://github.com/T31K/Portfolio-Site.git
+git push -u origin master
+If you do all the above successfully, your GitHub repo should look something like this. The last step is to tell GitHub to build the pages from the files you’ve pushed.
+
+Head over to Settings > Pages and
+
+Select master or main branch to build your Pages from
+Insert the custom domain that you’ve set up from Step 1
+Ensure you check Enforce HTTPS for secured browsing to your site
+
+Step 7 — Awe At Your Masterpiece
+Congratulations, you’ve successfully created your own portfolio site! Head over to the site and stare at it for as long as you want, appreciate the hard work you’ve put in & give yourself a firm pat on the back.
+
+Of course, this isn’t the end but it’s a very good start. This is just the beginning as you should regularly come back and update it, so that your content stays fresh and you keep your doors open to new opportunities and recruiters that are out hunting for suitable candidates.
+
+As usual, take care and till next time.
+
+~ Tim
+
+If you like my content, please consider buying me a coffee ☕️.
+
+Related articles you may like:
+🚀 Stop Making These 4 Mistakes When Building A Portfolio Site
+🎨 How To Display Medium Posts On Your Website
+❌ Tech Interviews Are Broken
+
+More content at plainenglish.io
+
+Technology
+Programming
+Careers
+Software Development
+Web Development
+402
+
+1
+
+JavaScript in Plain English
+Published in JavaScript in Plain English
+169K followers
+·
+Last published 6 hours ago
+New JavaScript and Web Development content every day. Follow to join our 3.5M+ monthly readers.
+
+Follow
+Tim Wong
+Written by Tim Wong
+259 followers
+·
+33 following
+Software Engineer & Writer. Enjoy reading the encapsulations that is formed in the enigma machinations of my mind.
+
+Follow
+Responses (1)
+Neha Sudarshan
+Neha Sudarshan
+
+
+
+Cancel
+Respond
+Joi Schünemann
+Joi Schünemann
+
+Jun 26, 2021
+
+A good starting point and a good overview for creating a basic portfolio page. I would love to hear more in this direction. Maybe with a more detailed view on presenting the different projects in a portfolio.
+11
+
+Reply
+
+More from Tim Wong and JavaScript in Plain English
+What is an Indie Hacker? How To Get Started
+Tim Wong
+Tim Wong
+
+What is an Indie Hacker? How To Get Started
+An indie hacker is any individual who builds and launches products that generates revenue, simply said.
+Sep 3, 2023
+11
+1
+
+Frontend Caching: The Most Underrated Performance Technique Nobody Talks About
+JavaScript in Plain English
+In
+
+JavaScript in Plain English
+
+by
+
+Priyen Mehta | Senior Full-Stack Developer
+
+Frontend Caching: The Most Underrated Performance Technique Nobody Talks About
+Free Member Link
+
+Dec 5, 2025
+736
+12
+
+I Stopped Using Classes in JavaScript (Here’s What I Use Instead)
+JavaScript in Plain English
+In
+
+JavaScript in Plain English
+
+by
+
+Ignatius Sani
+
+I Stopped Using Classes in JavaScript (Here’s What I Use Instead)
+I used to write classes everywhere.
+
+Dec 13, 2025
+476
+25
+
+Get Medium followers count with JavaScript Scraping
+Tim Wong
+Tim Wong
+
+Get Medium followers count with JavaScript Scraping
+Retrieve Medium followers count using JavaScript JS scraping
+
+Aug 27, 2022
+59
+
+See all from Tim Wong
+See all from JavaScript in Plain English
+Recommended from Medium
+How I Built My Portfolio Website (And Survived the Struggle)
+Pooja Nair
+Pooja Nair
+
+How I Built My Portfolio Website (And Survived the Struggle)
+Lessons, tools, and tips from my messy journey to a live portfolio!
+Aug 21, 2025
+
+The 47-Line Code That Made One Developer $2 Million from AI
+Yash Batra
+Yash Batra
+
+The 47-Line Code That Made One Developer $2 Million from AI
+In late 2024, a solo indie developer pushed 47 lines of Python code to GitHub.
+
+Jul 8, 2025
+4.8K
+143
+
+The Python Tool I Built in a Weekend That Now Pays My Rent
+Python in Plain English
+In
+
+Python in Plain English
+
+by
+
+Suleman Safdar
+
+The Python Tool I Built in a Weekend That Now Pays My Rent
+How I turned a tiny automation script into a paid product using libraries, clean OOP, and a little C++ speed where it mattered
+
+Aug 11, 2025
+4.3K
+87
+
+The AI Bubble Is About To Burst, But The Next Bubble Is Already Growing
+Will Lockett
+Will Lockett
+
+The AI Bubble Is About To Burst, But The Next Bubble Is Already Growing
+Techbros are preparing their latest bandwagon.
+
+Sep 14, 2025
+20K
+802
+
+How Often Should You Launch a New Product?
+ILLUMINATION
+In
+
+ILLUMINATION
+
+by
+
+Adriana Tica
+
+How Often Should You Launch a New Product?
+Yes, launches can be lucrative. But that doesn’t mean you should launch something new every month
+
+Aug 9, 2025
+49
+1
+
+How I Cloned a YouTube Channel Using Google’s NotebookLM
+ven coding
+ven coding
+
+How I Cloned a YouTube Channel Using Google’s NotebookLM
+A step-by-step workflow for building faceless YouTube automation with real data.
+
+Dec 26, 2025
+744
+24
+
+See more recommendations
+Help
+
+Status
+
+About
+
+Careers
+
+Press
+
+Blog
+
+Privacy
+
+Rules
+
+Terms
+
+Text to speech
+
+All your favorite parts of Medium are now in one sidebar for easy access.
+Okay, got it

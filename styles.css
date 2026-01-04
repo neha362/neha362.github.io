@@ -7,3 +7,41 @@ h1 {
 body {
   background-color: #f8f9fa;
 }
+
+.custom-navbar {
+  background-color: #1f2933; /* dark slate */
+  padding: 0.75rem 1rem;
+}
+
+.custom-navbar .navbar-brand {
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color: #60a5fa;
+}
+
+.custom-navbar .nav-link {
+  color: #e5e7eb;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #60a5fa;
+}
+
+.content {
+  margin-top: 100px;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
